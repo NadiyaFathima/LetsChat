@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LetsChat</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css"></style>
+    </head>
+    <body id="bg">
+        <div class="container">
+        <button id="logout" onclick="logOut();">Log Out</button>
+        <center>
+            <h1 class="header">	
+                LetsChat	
+            </h1>
+            <h3 class="color_white" id="user_name"></h3>
+            <div class="form-group input_div_room_page">
+                <label id="add">#Add Room:</label>
+                <br><br>
+                <input type="text" id="roomName" class="form-control" placeholder="#RoomName">
+    
+            </div>
+            <button id="add_button" onclick="addRoom();">#Add Room</button>
+            <h3 class="color_white" id="hashtag">#TrendingRooms</h3>
+            <div id="trending_output"></div>
+    </center>
+</div>
+<script src="letschat_rooom.js"></script>
+</body>
+</html>
